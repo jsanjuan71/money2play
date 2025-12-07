@@ -29,6 +29,7 @@ import {
   Logout,
   LocalFireDepartment,
   Star,
+  Group,
 } from "@mui/icons-material";
 import { useTranslations } from "next-intl";
 import { useAuth } from "@/lib/AuthContext";
@@ -122,6 +123,13 @@ export default function KidDashboard() {
       description: "Earn badges!",
       color: "#FFD700",
       href: "/kid/achievements",
+    },
+    {
+      icon: <Group sx={{ fontSize: 40 }} />,
+      title: "Friends",
+      description: "Connect!",
+      color: "#FF9800",
+      href: "/kid/friends",
     },
   ];
 
