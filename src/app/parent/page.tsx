@@ -275,7 +275,12 @@ export default function ParentDashboard() {
                       </Box>
                     </CardContent>
                     <CardActions>
-                      <Button size="small">{t("parent.sendMoney")}</Button>
+                      <Button
+                        size="small"
+                        onClick={() => router.push(`/parent/transfers?kidId=${kid._id}`)}
+                      >
+                        {t("parent.sendMoney")}
+                      </Button>
                       <Button size="small">{t("parent.viewActivity")}</Button>
                     </CardActions>
                   </Card>
