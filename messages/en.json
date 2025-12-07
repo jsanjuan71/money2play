@@ -1,0 +1,22 @@
+{
+  "common": {
+    "welcome": "Welcome",
+    "getStarted": "Get Started",
+    "learnMore": "Learn More",
+    "darkMode": "Dark Mode",
+    "lightMode": "Light Mode",
+    "language": "Language",
+    "english": "English",
+    "spanish": "Spanish"
+  },
+  "home": {
+    "title": "Next.js App",
+    "subtitle": "Built with Material UI, Tailwind CSS, and Convex",
+    "description": "This is a modern web application featuring dark/light mode, internationalization support for English and Spanish, and a real-time backend powered by Convex."
+  },
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "settings": "Settings"
+  }
+}

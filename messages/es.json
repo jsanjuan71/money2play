@@ -1,0 +1,22 @@
+{
+  "common": {
+    "welcome": "Bienvenido",
+    "getStarted": "Comenzar",
+    "learnMore": "Aprender Mas",
+    "darkMode": "Modo Oscuro",
+    "lightMode": "Modo Claro",
+    "language": "Idioma",
+    "english": "Ingles",
+    "spanish": "Espanol"
+  },
+  "home": {
+    "title": "Aplicacion Next.js",
+    "subtitle": "Construida con Material UI, Tailwind CSS y Convex",
+    "description": "Esta es una aplicacion web moderna con modo oscuro/claro, soporte de internacionalizacion para ingles y espanol, y un backend en tiempo real impulsado por Convex."
+  },
+  "navigation": {
+    "home": "Inicio",
+    "about": "Acerca de",
+    "settings": "Configuracion"
+  }
+}
