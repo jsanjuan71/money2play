@@ -4,6 +4,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
 import { ThemeProvider } from "@/theme/ThemeContext";
 import { ConvexClientProvider } from "@/components/ConvexClientProvider";
+import { AuthProvider } from "@/lib/AuthContext";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -17,8 +18,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Next.js App",
-  description: "Next.js app with Material UI, Tailwind CSS, and Convex",
+  title: "Money n Play - Learn Money, Have Fun!",
+  description: "A fun educational app where kids learn real-world money skills through play, while parents stay in control.",
 };
 
 export default async function RootLayout({
@@ -36,7 +37,9 @@ export default async function RootLayout({
       >
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider>
-            <ConvexClientProvider>{children}</ConvexClientProvider>
+            <ConvexClientProvider>
+              <AuthProvider>{children}</AuthProvider>
+            </ConvexClientProvider>
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>
