@@ -87,7 +87,7 @@ export default function KidShopPage() {
   // State
   const [tabValue, setTabValue] = useState(0);
   const [buyDialogOpen, setBuyDialogOpen] = useState(false);
-  const [selectedItem, setSelectedItem] = useState<typeof shopItems extends (infer T)[] ? T : never | null>(null);
+  const [selectedItem, setSelectedItem] = useState<any>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [success, setSuccess] = useState<string | null>(null);

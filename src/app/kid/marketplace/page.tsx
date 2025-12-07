@@ -97,8 +97,8 @@ export default function KidMarketplacePage() {
   const [tabValue, setTabValue] = useState(0);
   const [buyDialogOpen, setBuyDialogOpen] = useState(false);
   const [sellDialogOpen, setSellDialogOpen] = useState(false);
-  const [selectedListing, setSelectedListing] = useState<typeof activeListings extends (infer T)[] ? T : never | null>(null);
-  const [selectedInventoryItem, setSelectedInventoryItem] = useState<typeof myInventory extends (infer T)[] ? T : never | null>(null);
+  const [selectedListing, setSelectedListing] = useState<any>(null);
+  const [selectedInventoryItem, setSelectedInventoryItem] = useState<any>(null);
   const [listingPrice, setListingPrice] = useState("");
   const [listingDescription, setListingDescription] = useState("");
   const [loading, setLoading] = useState(false);

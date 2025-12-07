@@ -77,7 +77,7 @@ export default function KidInvestmentsPage() {
   const [buyDialogOpen, setBuyDialogOpen] = useState(false);
   const [sellDialogOpen, setSellDialogOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState<Id<"investmentOptions"> | null>(null);
-  const [selectedInvestment, setSelectedInvestment] = useState<typeof portfolio extends (infer T)[] ? T : never | null>(null);
+  const [selectedInvestment, setSelectedInvestment] = useState<any>(null);
   const [amount, setAmount] = useState("");
   const [shares, setShares] = useState("");
   const [loading, setLoading] = useState(false);

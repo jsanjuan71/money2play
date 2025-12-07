@@ -157,7 +157,8 @@ export default function KidAvatarPage() {
 
   // Get equipped item for a slot
   const getEquippedItem = (slot: string) => {
-    return avatarConfig?.items?.[slot] || null;
+    const items = avatarConfig?.items as Record<string, any> | undefined;
+    return items?.[slot] || null;
   };
 
   if (authLoading || !isAuthenticated || userType !== "kid") {
