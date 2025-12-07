@@ -116,6 +116,13 @@ export default function KidDashboard() {
       color: "#7C4DFF",
       href: "/kid/shop",
     },
+    {
+      icon: <Star sx={{ fontSize: 40 }} />,
+      title: "Achievements",
+      description: "Earn badges!",
+      color: "#FFD700",
+      href: "/kid/achievements",
+    },
   ];
 
   if (authLoading || !isAuthenticated || userType !== "kid") {
